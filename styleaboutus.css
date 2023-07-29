@@ -103,3 +103,42 @@
         padding-top: 6%;
     }
 }
+@media only screen and (max-width: 480px ){
+    .bg_heading{
+        font-size: 8rem;
+        height: 15vh;
+    }
+    .dept_onscreen{
+        height: 15vh;
+    }
+    .department-part{
+        margin-top: 5%;
+        height: 20vh;
+    }
+    .dept_bg{
+        height: 20vh;
+    }
+    .community_programs{
+        display: block;
+    }
+    .image_for_community_programs{
+        width: 80%;
+        height: 200px;
+    }
+    .written_part_for_community_programs{
+        width: 90%;
+        margin: auto;
+    }
+    .time_table_holidays{
+        display: block;
+
+    }
+    .timetable{
+        width: 90%;
+        margin: auto;
+    }
+    .holidays{
+        width: 90%;
+        margin: auto;
+    }
+}
