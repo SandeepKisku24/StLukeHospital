@@ -688,6 +688,9 @@ nav a:hover{
     }
 }
 @media only screen and (max-width: 480px ) {
+    body{
+        overflow: hidden;
+    }
     .name{
         font-size: 21px;
         width: 100%;
@@ -777,6 +780,9 @@ nav a:hover{
     }
     .active_container{
         display: contents;
+    }
+    .containers_for_services{
+        height: fit-content;
     }
     .doc{
         width: 20%;
