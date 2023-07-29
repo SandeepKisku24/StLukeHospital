@@ -107,7 +107,7 @@ nav a:hover{
     overflow: hidden;
     /* background-image: url("allpage1.jpg"); */
     background-image: url("community100.jpg");
-    background-size: cover;
+    background-size:100%;
     position: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -475,7 +475,7 @@ nav a:hover{
 
 
 .doc_picture{
-    width: 80%px;
+    width: 80%;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -686,4 +686,131 @@ nav a:hover{
     .gallery{
         height: 80vh;
     }
+}
+@media only screen and (max-width: 480px ) {
+    .name{
+        font-size: 21px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .nav_appointment{
+        width: 0%;
+        display: none;
+    }
+    .slider{
+        height: 40vh;
+    }
+    .written_part{
+        width: 30%;
+        font-size: 30px;
+    
+    }
+    .slides_control{
+        top: 50vh;
+    }
+    .sidebar{
+       display: none;
+    }
+    .about_us{
+        display: block;
+        height: fit-content;
+    }
+    .number_wise{
+        width: 100%;
+    }
+    .box_aboutus{
+        font-size: 60px;
+        height: 20vh;
+        width: fit-content;
+    }
+    .about_uscontent{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .departments{
+        height: 100px;
+    }
+    .department i{
+        margin-top: 2%;
+        font-size: 2em;
+    }
+    .left-arrow{
+        margin-left: -25px;
+    
+    }
+    .right-arrow{
+        right: 5%;
+    }
+    .container{
+        /* display: block; */
+
+    }
+    .image1
+    {
+    height: 25vh;
+    width: 80%;
+    margin: auto;
+    }
+    .about_the_service{
+        width: 90%;
+        height: fit-content;
+        /* margin-bottom: 5%; */
+    }
+    .bg_heading{
+        font-size: 8rem;
+        height: 15vh;
+    }
+    .dept_onscreen{
+        height: 15vh;
+    }
+    .department-part{
+        margin-top: 5%;
+        height: 20vh;
+    }
+    .dept_bg{
+        height: 20vh;
+    }
+    .dept1{
+        display: contents;
+    }
+    .active_container{
+        display: contents;
+    }
+    .doc{
+        width: 20%;
+        text-align: center;
+        background-color: #fff;
+      }
+      .doctor{
+        width: 300%;
+      }
+      .doctors{
+        width: 90%;
+      }
+      .gallery{
+        height: fit-content;
+        display: block;
+      }
+      .left_part_gallery{
+        width: 80%;
+      }
+      .right_part_gallery{
+        width: 100%;
+        margin-top: 2%;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .image_gal{
+        width: 40%;
+      }
+      .footer{
+        margin-top: 10%;
+        display: block;
+      }
+      .name1{
+        font-size: 20px;
+      }
 }
