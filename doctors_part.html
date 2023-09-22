@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_docs.css">
+</head>
+<body>
+    <div class="doctor1">
+        <div class="left-arrow doc-arrow">
+            <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
+        </div>
+        <div class="right-arrow doc-arrow-right">
+            <div class="arrow"><i class="fa-solid fa-arrow-left fa-rotate-180"></i></div>
+        </div>
+        
+        <div class="doctors1">
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr. Voilet Murmu.jpg" alt=""></div>
+                            <div class="doc_name"style="height: fit-content;" ><b>Dr. Voilet Murmu</b></div>
+                            <div class="specialisation"><p>MBBS</p>
+                            </div>
+            </div>
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr. Mary Laly K A MBBS.jpg" alt=""></div>
+                            <div class="doc_dir">
+                                <div class="doc_name "> <b>Sr. Dr. Mary Laly K A MBBS</b></div>
+                            <div class="specialisation">
+                                <p>MD Internal Medicine</p>
+                                <!-- <p>(Director of St.Luke Hospital)</p> -->
+                            </div>
+                            </div>
+            </div>
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr. Christin Mary C MBBS.jpg" alt=""></div>
+                            <div class="doc_name"style="height: fit-content;"><b>Sr. Dr. Christin Mary C </b></div>
+                            <div class="specialisation">
+                                <p>MBBS</p>
+                            </div>
+            </div>
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr Rahul.jpg" alt=""></div>
+                            <div class="doc_name"style="height: fit-content;"><b>Dr. Rahul Lakshmi Shankar Singh  </b></div>
+                            <div class="specialisation"><p>MBBS, MS Surgeon</p>
+                            </div>
+            </div>
+            
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr. Bobby.jpg" alt=""></div>
+                            <div class="doc_name" style="height: fit-content;"><b>Dr. Bobby Kumari</b> </div>
+                            <div class="specialisation">
+                                <p>BDS</p>
+                        </div>
+            </div>
+            <div class="doc_department ">
+                <div class="doc_picture"> <img src="Dr karuna.jpg" alt=""></div>
+                            <div class="doc_name" style="height: fit-content;"><b>Sr. Dr. Karuna Kerketta</b> </div>
+                            <div class="specialisation"><p>BHMS</p>
+                        </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script>
+        var doctor1 = 0;
+        var dept_doc = document.querySelector(".doctors1");
+        var click_left_doc = document.querySelector(".doc-arrow");
+        click_left_doc.addEventListener('click',function(){
+            if(doctor1<0)
+            doctor1++;
+            var t = doctor1*(25)+ "%";
+            dept_doc.style.marginLeft = t;
+            console.log(doctor1+ " "+ dept_doc.classList);
+        }); 
+        var click_left1_doc = document.querySelector(".doc-arrow-right");
+        click_left1_doc.addEventListener('click',function(){
+            if(doctor1>-2)
+            doctor1--;
+            var t = doctor1*(25)+ "%";
+            dept_doc.style.marginLeft = t;
+            console.log(doctor1);
+        }); 
+        
+    </script>
+</body>
+</html>
