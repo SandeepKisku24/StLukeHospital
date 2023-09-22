@@ -1,3 +1,31 @@
+ body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    outline: 1px solid white;
+  }
+.doctors::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+   
+  .doctors::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .doctors::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    outline: 1px solid white;
+  }
+  
 html{
     overflow-x: hidden;
     /* margin-right: 0.5%; */
@@ -188,7 +216,7 @@ nav a:hover{
     height: 8px;
     border-radius: 2px;
     margin: 4px;
-    border: 1px solid grey;
+    border: 1px solid #fff;
 }
 .activecolor{
     background-color: white;
@@ -231,6 +259,9 @@ nav a:hover{
     justify-content: center;
 }
 
+.mobile_about{
+    display: none;
+}
 .about_us{
     display: flex;
     flex-direction: row;
@@ -250,6 +281,7 @@ nav a:hover{
     flex-direction: column;
     /* justify-content: space-around; */
     margin-top: 5vh;
+    color: #007bff;
 }
 .line_one_aboutus{
     text-align: center;
@@ -289,7 +321,7 @@ nav a:hover{
 .department-part{
     margin-top: 5px;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     position: relative;
 }
 .dept_bg{
@@ -300,12 +332,12 @@ nav a:hover{
     position: absolute;
     /* margin: 0 0 0 0; */
     width: 100%;
-    height: 30vh;
+    height: 20vh;
 }
 .bg_heading{
-    font-size: 10rem;
+    font-size: 7rem;
     /* padding-left: 20%; */
-    padding-top: 2%;
+    padding-top: 1%;
     /* position:fixed; */
     /* border-width: 100; */
     color: white;
@@ -317,15 +349,15 @@ nav a:hover{
     /* z-index: 100; */
     position: absolute;
     text-align: center; 
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     
 }
 .onscreen_heading{
    
- font-size: 3rem;
+ font-size: 4rem;
  color: black;
- padding-top:8% ;
+ padding-top:5% ;
  /* padding-left: 5%; */
  /* position:fixed; */
  width: 100%;
@@ -473,50 +505,120 @@ nav a:hover{
     color: #007bff;
 }
 
+/* doctor part */
+.doc_part_for_final1{
+    display: none;
+}
+.doctor{
+    height: 100%;
+    margin: auto;
+}
+.doc_part_for_final1{
+    display: none;
+}
+.doctor1{
+    width: 80%;
+    overflow-x: hidden;
+    margin: auto;
+    /* margin-top: 5%; */
+    height: 300px;
+}
+
+.doctors1{
+    width: 200%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* overflow-x: scroll; */
+    margin: auto;
+    /* margin-left: 0%; */
+}
+
+.doc_department{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    width: 15%;
+    text-align: center;
+    /* background-image: url("background-aboutus.jpg"); */
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    /* color: #fff; */
+    cursor: pointer;
+    color: grey;
+    box-shadow: 3px 2px 2px #007bff;
+}
+
+
+.doc_department i{
+    font-size: 3em; 
+    color: #fff;
+    height: 80px;
+    /* width: 100%; */
+}
+.doc_department i:hover{
+    font-size: 3em; 
+    color: #007bff;
+}
+.doc_department:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.dptname{
+    margin-top: 0px;
+}
+.img {
+    width: 50%;
+    height: 80%;
+}
+.doc-arrow-right, .doc-arrow{
+    position: absolute;
+    height: 300px;
+    /* margin-left: 40px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.doc-arrow-right{
+    position:absolute;
+    right: 8% ;
+}
+.doc-arrow{
+    position:absolute;
+    left: 8% ;
+}
+.right-arrow,.left-arrow i:hover{
+    color: #fff;
+}
+.right-arrow i:hover{
+    color: #fff;
+}
+.arrow:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
 
 .doc_picture{
     width: 80%;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 180px;
+    margin: auto;
 }
 .doc_picture img{
     width: 100%;
     height: 100%;
     
 }
-.doc{
-  width: 12%;
-  text-align: center;
-  background-color: #fff;
+.doc_dir{
+    height: fit-content;
 }
-.doc_name{
-   
-}
-.specialisation{
-    color: #007bff;
-    /* text-align: center; */
-}
-.heading_for_docs{
-    text-align: center;
-}
-.doctors{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-x: scroll;
-    margin-top: 5%;
-    }
-.doctor{
-    width: 160%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5%;
-    background-image: url("background-aboutus.jpg");
-    background-size: 80%;
-}
+
+/* doc -part */
 .doc_part_for_final{
     height: fit-content;
     
@@ -528,7 +630,7 @@ nav a:hover{
 }
 .gallery{
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -546,7 +648,7 @@ nav a:hover{
 }
 .right_part_gallery{
     width: 60%;
-    height: 80%;
+    height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
@@ -627,6 +729,38 @@ nav a:hover{
 }
 @media screen and (max-width: 1366px) and (min-width: 480px){
 
+
+    .bg_heading{
+        font-size: 5rem;
+        /* padding-left: 20%; */
+        padding-top: 1%;
+        /* position:fixed; */
+        /* border-width: 100; */
+        color: white;
+        text-align: center;
+    }
+    
+    .dept_onscreen{
+       
+        /* z-index: 100; */
+        position: absolute;
+        text-align: center; 
+        height: 20vh;
+        width: 100%;
+        
+    }
+    .onscreen_heading{
+       
+     font-size: 2rem;
+     color: black;
+     padding-top:5% ;
+     /* padding-left: 5%; */
+     /* position:fixed; */
+     width: 100%;
+     /* margin: auto; */
+     /* position: relative; */
+    }
+
     .name{
         margin-top: auto;
         margin-bottom: auto;
@@ -663,6 +797,12 @@ nav a:hover{
     .onscreen_heading{
         padding-top: 6%;
     }
+
+    /* doctor is made none */
+    .doctor1{
+        /* display: none; */
+    }
+
     .doc_name{
         padding-top: 1%;
     }
@@ -684,7 +824,7 @@ nav a:hover{
         font-size: 16px;
     }
     .gallery{
-        height: 80vh;
+        height: fit-content
     }
 }
 @media only screen and (max-width: 480px ) {
@@ -715,9 +855,15 @@ nav a:hover{
     .sidebar{
        display: none;
     }
+    .mobile_about{
+        display: block;
+    }
     .about_us{
         display: block;
         height: fit-content;
+    }
+    .about_usheading{
+        display: none;
     }
     .number_wise{
         width: 100%;
@@ -733,11 +879,13 @@ nav a:hover{
     }
     
     .departments{
-        height: 100px;
+        height: 60px;
     }
     .department i{
-        margin-top: 2%;
-        font-size: 2em;
+        margin-top: 0%;
+        font-size: 1.5em;
+        height: fit-content;
+        margin-bottom: 3%;
     }
     .left-arrow{
         margin-left: -25px;
@@ -761,20 +909,61 @@ nav a:hover{
         height: fit-content;
         /* margin-bottom: 5%; */
     }
+
+
+
     .bg_heading{
-        font-size: 8rem;
-        height: 15vh;
+        font-size: 5rem;
+        height: 10vh;
     }
     .dept_onscreen{
-        height: 15vh;
+        height: 10vh;
+    }
+    .bg_heading{
+        font-size: 5rem;
+        /* padding-left: 20%; */
+        padding-top: 1%;
+        /* position:fixed; */
+        /* border-width: 100; */
+        color: white;
+        text-align: center;
+    }
+    
+    .dept_onscreen{
+       
+        /* z-index: 100; */
+        position: absolute;
+        text-align: center; 
+        /* height: 20vh; */
+        width: 100%;
+        
+    }
+    .onscreen_heading{
+       
+     font-size: 2rem;
+     color: black;
+     padding-top:5% ;
+     /* padding-left: 5%; */
+     /* position:fixed; */
+     width: 100%;
+     /* margin: auto; */
+     /* position: relative; */
     }
     .department-part{
         margin-top: 5%;
-        height: 20vh;
+        /* height: 50px; */
     }
     .dept_bg{
-        height: 20vh;
+        height: 15vh;
     }
+
+
+
+    .about_the_service h1{
+        font-size: 1em;
+    }
+
+
     .dept1{
         display: contents;
     }
@@ -784,13 +973,86 @@ nav a:hover{
     .containers_for_services{
         height: fit-content;
     }
+    .dptname{
+        margin-top: 3%;
+        font-size: 9px;
+    }
+
+    /* doctor is made to hide */
+
+    .doc_part_for_final{
+        display: none;
+    }
+    .doc_part_for_final1{
+        display: block;
+    }
+    .doctor2{
+        width: 80%;
+        overflow-x: hidden;
+        margin: auto;
+        /* margin-top: 5%; */
+        height: 300px;
+    }
+    
+    .doctors2{
+        width: 600%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* overflow-x: scroll; */
+        margin: auto;
+        /* margin-left: 0%; */
+    }
+    
+    .doc_department2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin: auto;
+        width: 15%;
+        text-align: center;
+        /* background-image: url("background-aboutus.jpg"); */
+        background-size: 90%;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        /* color: #fff; */
+        cursor: pointer;
+        color: grey;
+        box-shadow: 3px 2px 2px #007bff;
+    }
+    
+    
+    .doc_department2 i{
+        font-size: 3em; 
+        color: #fff;
+        height: 80px;
+        /* width: 100%; */
+    }
+    .doc_department2 i:hover{
+        font-size: 3em; 
+        color: #007bff;
+    }
+    .doc_department2:hover {
+        background-color: #fff;
+        color: #007bff;
+    }
+    
+
     .doc{
         width: 20%;
         text-align: center;
         background-color: #fff;
       }
+      .doc_name{
+        font-size: 15px;
+      }
       .doctor{
         width: 300%;
+      }
+      .specialisation h2{
+        font-size: 16px;
       }
       .doctors{
         width: 90%;
@@ -802,6 +1064,9 @@ nav a:hover{
       .left_part_gallery{
         width: 80%;
         height: 200px;
+      }
+      .doctor ul{
+        list-style: none;
       }
       .right_part_gallery{
         width: 100%;
@@ -819,5 +1084,11 @@ nav a:hover{
       }
       .name1{
         font-size: 20px;
+      }
+      .left_side_footer{
+        width: 90%;
+      }
+      .footerline{
+        height: fit-content;
       }
 }

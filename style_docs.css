@@ -1,0 +1,101 @@
+.doctor1{
+    width: 80%;
+    overflow-x: hidden;
+    margin: auto;
+    height: 300px;
+}
+
+.doctors1{
+    width: 150%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* overflow-x: scroll; */
+    /* margin: auto; */
+    /* margin-left: 0%; */
+}
+
+.doc_department{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    width: 15%;
+    text-align: center;
+    /* background-image: url("doc_back.jpg"); */
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    /* color: #fff; */
+    cursor: pointer;
+    color: grey;
+    box-shadow: 3px 2px 2px #007bff;
+}
+
+
+.doc_department i{
+    font-size: 3em; 
+    color: #fff;
+    height: 80px;
+    width: 100%;
+}
+.doc_department i:hover{
+    font-size: 3em; 
+    color: #007bff;
+}
+.doc_department:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.dptname{
+    margin-top: 0px;
+}
+.img {
+    width: 50%;
+    height: 80%;
+}
+.doc-arrow-right, .doc-arrow{
+    position: absolute;
+    height: 300px;
+    /* margin-left: 40px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.doc-arrow-right{
+    position:absolute;
+    right: 8% ;
+}
+.doc-arrow{
+    position:absolute;
+    left: 8% ;
+}
+
+.right-arrow,.left-arrow i:hover{
+    color: #fff;
+}
+.right-arrow i:hover{
+    color: #fff;
+}
+.arrow:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.doc_picture{
+    width: 80%;
+    height: 180px;
+    margin:auto
+}
+.doc_picture img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.doc_dir{
+    height: fit-content;
+}
